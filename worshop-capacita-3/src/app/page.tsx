@@ -11,9 +11,9 @@ const InstaFluxo = () => {
 
   const users = [
     { nome: "Seu Story", cor: "bg-blue-300" },
-    { nome: "PAUlo", cor: "bg-gray-500" },
-    { nome: "Cordeirinho", cor: "bg-red-300" },
-    { nome: "CECEilia", cor: "bg-yellow-300" },
+    { nome: "Bruno", cor: "bg-gray-500" },
+    { nome: "Paulo", cor: "bg-red-300" },
+    { nome: "Breno", cor: "bg-yellow-300" },
     { nome: "Gabriel", cor: "bg-orange-300" },
     { nome: "Fernanda", cor: "bg-gray-300" },
     { nome: "Renato", cor: "bg-amber-300" },
@@ -22,15 +22,15 @@ const InstaFluxo = () => {
   ];
 
   const posts = [
-    { username: "GayBi", content: "Hihihihi" },
-    { username: "Karline", content: "Post incrível aqui!" },
-    { username: "Karline", content: "Post incrível aqui!" },
-    { username: "Karline", content: "Post incrível aqui!" },
+    { username: "GaBi", content: "Hihihihi" },
+    { username: "Karine", content: "Post incrível aqui!" },
+    { username: "Lucas", content: "Post incrível aqui!" },
+    { username: "Roger", content: "Post incrível aqui!" },
   ];
 
   const usuario = {
     foto: "bg-green-500",
-    nome: "LOLmenha"
+    nome: "Seu nome"
   }
 
   const anuncios = [
