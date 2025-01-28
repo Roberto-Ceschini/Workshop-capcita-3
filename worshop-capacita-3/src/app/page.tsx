@@ -1,6 +1,5 @@
 "use client"
 import React from "react";
-import Post from "./components/post";
 import confetti from 'canvas-confetti';
 
 const InstaFluxo = () => {
@@ -10,7 +9,7 @@ const InstaFluxo = () => {
   };
 
   const users = [
-    { nome: "Seu Story", cor: "bg-blue-300" },
+    { nome: "Story+", cor: "bg-blue-300" },
     { nome: "Bruno", cor: "bg-gray-500" },
     { nome: "Paulo", cor: "bg-red-300" },
     { nome: "Breno", cor: "bg-yellow-300" },
@@ -110,7 +109,19 @@ const InstaFluxo = () => {
         </div>
         <div className="w-[80vw] flex h-[100%] flex-col justify-around gap-4 overflow-y-auto md:w-[30vw]">
           {posts.map((post, index) => (
-            <Post key={index} username={post.username} content={post.content} />
+            <div key={index} className="flex flex-col w-[100%] justify-around gap-4 p-4 bg-white shadow-md rounded-lg">
+            <div className="flex items-center space-x-4">
+              <div className="w-10 h-10 bg-blue-300 rounded-full" />
+              <p className="font-bold">{post.username}</p>
+            </div>
+            <div className="h-48 bg-orange-300 rounded-lg" />
+            <p>{post.content}</p>
+            <div className="flex space-x-4">
+              <button className="text-gray-600">👍</button>
+              <button className="text-gray-600">💬</button>
+              <button className="text-gray-600">🔗</button>
+            </div>
+          </div>
           ))}
         </div>
         <div className="hidden md:flex flex-col gap-4 bg-gray-100 p-4 w-[30vw] h-[100%]">
